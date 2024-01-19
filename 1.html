@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function check(n, A) {
+        let count = 0;
+        for (let i = 0; i < n; i++) {
+          ///
+          if (A[i] !== A[n - 1 - i]) {
+            count++;
+          }
+        }
+        if (count === 0) {
+          console.log("đây là mảng dx");
+        } else {
+          console.log("mảng ko dx");
+        }
+      }
+
+      let a = [2, 1, 3, 1, 2];
+      check(a.length, a);
+    </script>
+  </body>
+</html>
